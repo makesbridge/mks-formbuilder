@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formbuilder Plugin</title>
+	
+	 <link rel="stylesheet" type="text/css" href="css/jquery-ui-1.8.17.custom.css">
+	 <link rel="stylesheet" type="text/css" href="css/formbuilder.css">
+	 <link rel="stylesheet" type="text/css" href="css/icons.css">
+	 <link rel="stylesheet" type="text/css" href="css/jPicker-1.1.6.min.css">
+
+	 <!--<script type="text/javascript" src="js/jquery.js"></script>-->
+	 <script src="//code.jquery.com/jquery-2.2.3.min.js"></script>
+	 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/jpicker-1.1.6.min.js"></script>
+	<!--<script type="text/javascript" src="js/jquery-ui-1.8.11.custom.min.js"></script>-->
+	
+	<script type="text/javascript" src="js/jquery.highlight.js"></script>
+	<script type="text/javascript" src="js/jquery.cookie.js"></script>
+	
+	<script type="text/javascript" src="formbuilder.js"></script>
+<style>
+    *{
+        padding:0;
+        margin:0;
+        
+    }
+</style>
+</head>
+<body>
+<!-- <div class="global_messages messagebox success" style="display: block; margin-left: -250px;">
+    <h3>Success</h3>
+    <p>Landing page saved successfully!</p>
+    <a class="closebtn"></a> 
+</div>--> 
+<!--<div id="space1" style="height:20px"></div> 
+    <div id="space2" style="height:50px"></div> 
+    <div id="space3" style="height:150px"></div> 
+    <div id="space4" style="height:250px"></div> -->
+<div id="myformbuilder"></div>
+
+<!--<div id="space5" style="height:550px"></div>--> 
+<script type="text/javascript">
+$(document).ready(function(){
+    
+        if($.cookie('bmsToken')){
+           	$('#myformbuilder').formbuilder({mpageId:'BzAEqwsIo20Ej21Qm30BgyStRf',formId:'qcWOc30Uf33Qi26Gh17qQw',isPluginOnly:true,accordionFixed:true}); 
+        }else{
+             window.location="login.html";
+        }
+})
+</script>
+
+</body>
+</html>
