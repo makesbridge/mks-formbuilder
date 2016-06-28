@@ -2713,15 +2713,16 @@ display: none !important;
 }
 .ui-droparea,.sortable-ui-droparea{
   height:12px;
-  background:#4B8C43;
+  background:#666699;
   line-height: 12px ;
   padding: 0 !important;
-  border: 1px dashed #e5e5e5 !important;
+  border: 1px dashed #fff !important;
   margin: 0 10px;
-  background: #ffffff url("../img/drop_bg.png") repeat scroll left top;
+  background: #666699 url("../img/drop_bg.png") repeat scroll left top;
   position: absolute !important;
   width: 498px;
   z-index: 1005;
+  color:#fff;
 }
 .state-hover-dropable{
   height: 28px;
